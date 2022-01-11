@@ -169,6 +169,8 @@ def removeRear(self):
 def removeInside(self,index):
     cur = self.head
     count = 0
+    if index == 0: #别漏写这个！
+        self.head = self.head.next
     while cur and count <index :
         prev = cur
         cur = cur.next
