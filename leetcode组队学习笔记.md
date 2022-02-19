@@ -288,59 +288,7 @@ So basically a **set uses a hashtable as its underlying data structure**. This e
 (from https://stackoverflow.com/questions/3949310/how-is-set-implemented)
 
 ## Stack
-
-Stack is one type of linear list (线性表)
-
-### Array
-
-```python
-class Stack:
-    # initialize a stack
-    def __init__(self,size):
-        self.size = size
-        self.top = -1 #top=-1 表示空栈
-        self.stack = [ ] #in Python, we use list to implement stack as array
-
-    # check if stack is empty
-    def isEmpty(self):
-        return self.top == -1
-
-    def isFull(self):
-        return self.top == self.size-1
-
-    def push(self, value):
-        if self.isFull():
-            raise Exception('Stack is full')
-        else:
-            # 正常的话是先top+=1，然后索引stack[top]=value，但在Python的实现方式不太一样，要注意!
-            self.stack.append(value)
-            self.top += 1
-    #pop(): Removing (accessing) an element from the stack.
-    def pop(self):
-        if self.isEmpty():
-            raise Exception('Stack is empty')
-        else:
-            self.stack.pop()
-            self.top -= 1
-    #peek(): get the top data element of the stack, without removing it.
-    def peek(self):
-        if self.isEmpty():
-            raise Exception('Stack is empty')
-        else:
-            return self.stack[self.top]
-        
-        
-    
-```
-
-
-
-
-
-
-
-### Linked List
-
+见另外的文件
 
 
 ## Queue
