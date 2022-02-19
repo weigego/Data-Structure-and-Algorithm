@@ -1,11 +1,13 @@
-## Stack
+# Stack
 
 Stack is one type of linear list (线性表). Stack can be implemented as either array or linked list.
-
+## Implementation
 ### implement stack as array
 
 we can do this using list in Python.
-![image](https://user-images.githubusercontent.com/72336341/154809675-721c6286-4f85-4d2d-9470-b1ffb7b86504.png)
+
+<img src="C:\Users\willc\AppData\Roaming\Typora\typora-user-images\image-20220219234713398.png" alt="image-20220219234713398" style="zoom: 33%;" />
+
 ```python
 class Stack:
     # initialize a stack
@@ -53,7 +55,8 @@ Note that when the stack is full or we need to resize the stack, we need to crea
 ### implement stack as Linked List
 
 in this case, it's implementation is actually linked list, but with restriction.
-![image](https://user-images.githubusercontent.com/72336341/154809671-38e97e96-d4b5-4e73-82ff-bdf87a1bccdb.png)
+
+<img src="C:\Users\willc\AppData\Roaming\Typora\typora-user-images\image-20220219234800100.png" alt="image-20220219234800100" style="zoom:33%;" />
 
 ```python
 class Node:
@@ -92,4 +95,23 @@ class Stack:
         
 ```
 
+## Application
 
+堆栈的后进先出规则，可以保证特定的存取顺序。
+
+e.g. 翻转一组元素的顺序、铁路列车车辆调度、函数调用栈、浏览器的前进后退
+
+#### 利用栈求解逆波兰（后缀）表达式
+
+https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/
+
+逆波兰表达式是一种后缀表达式，所谓后缀就是指算符写在后面。
+
+平常使用的算式则是一种中缀表达式，如 ( 1 + 2 ) * ( 3 + 4 ) 。
+该算式的逆波兰表达式写法为 ( ( 1 2 + ) ( 3 4 + ) * ) 。
+逆波兰表达式主要有以下两个优点：
+
+去掉括号后表达式无歧义，上式即便写成 1 2 + 3 4 + * 也可以依据次序计算出正确结果。
+适合用栈操作运算：遇到数字则入栈；遇到算符则取出栈顶两个数字进行计算，并将结果压入栈中
+
+解题思路：给定一个合法的逆波兰表达式，每次遇到操作数operands，压入栈；如果遇到操作符operator，则连续出两次栈，第一个出栈的元素记为b，第二个记为a，计算**a** op **b**（注意不是**b** op **a**，例如：13/5的逆波兰表达式["13","5","/"])，将结果压入栈。
