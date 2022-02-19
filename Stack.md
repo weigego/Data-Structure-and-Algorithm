@@ -1,13 +1,11 @@
-# Stack
+## Stack
 
 Stack is one type of linear list (线性表). Stack can be implemented as either array or linked list.
-## Implementation
+
 ### implement stack as array
 
 we can do this using list in Python.
-
-<img src="C:\Users\willc\AppData\Roaming\Typora\typora-user-images\image-20220219234713398.png" alt="image-20220219234713398" style="zoom: 33%;" />
-
+![image](https://user-images.githubusercontent.com/72336341/154809675-721c6286-4f85-4d2d-9470-b1ffb7b86504.png)
 ```python
 class Stack:
     # initialize a stack
@@ -15,7 +13,6 @@ class Stack:
         self.size = size
         self.top = -1 #top=-1 表示空栈
         self.stack = [ ] #in Python, we use list to implement stack as array
-
     # check if stack is empty
     def isEmpty(self):
         return self.top == -1
@@ -55,8 +52,7 @@ Note that when the stack is full or we need to resize the stack, we need to crea
 ### implement stack as Linked List
 
 in this case, it's implementation is actually linked list, but with restriction.
-
-<img src="C:\Users\willc\AppData\Roaming\Typora\typora-user-images\image-20220219234800100.png" alt="image-20220219234800100" style="zoom:33%;" />
+![image](https://user-images.githubusercontent.com/72336341/154809671-38e97e96-d4b5-4e73-82ff-bdf87a1bccdb.png)
 
 ```python
 class Node:
@@ -94,7 +90,6 @@ class Stack:
         
         
 ```
-
 ## Application
 
 堆栈的后进先出规则，可以保证特定的存取顺序。
