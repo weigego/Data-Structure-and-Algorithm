@@ -6,7 +6,6 @@ Stack is one type of linear list (线性表). Stack can be implemented as either
 
 we can do this using list in Python.
 ![image](https://user-images.githubusercontent.com/72336341/154809675-721c6286-4f85-4d2d-9470-b1ffb7b86504.png)
-<img src="https://user-images.githubusercontent.com/72336341/154809675-721c6286-4f85-4d2d-9470-b1ffb7b86504.png" alt="description to the pic" style="zoom:5%;" />
 ```python
 class Stack:
     # initialize a stack
