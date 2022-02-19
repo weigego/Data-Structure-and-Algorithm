@@ -1,5 +1,5 @@
 ## Stack
-
+updated 2022/02/20 by wei
 Stack is one type of linear list (线性表). Stack can be implemented as either array or linked list.
 
 ### implement stack as array
