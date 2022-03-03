@@ -38,12 +38,13 @@ This theorem (CLT) establishes that, in many situations, when
 independent random variables are summed up, their properly normalized
 sum tends toward a normal distribution (informally a bell curve) even if
 the original variables themselves are not normally distributed.
+![image](https://user-images.githubusercontent.com/72336341/156584247-27e23831-6798-4b61-a045-95e431936fe5.png)
+
 
 This theory implies that probabilistic and statistical methods that work
 for normal distributions can be applicable to many problems involving
 other types of distributions.
-
-![](C:\Users\willc\AppData\Roaming\Typora\typora-user-images\image-20220303214941332.png)
+![image](https://user-images.githubusercontent.com/72336341/156584334-d58e40fa-29e4-4e57-90c1-a0b588427ede.png)
 
 ## Application of Monte Carlo Algorithm
 
