@@ -56,3 +56,4 @@ source:
 <http://www-personal.umich.edu/~gaozheng/teaching/stats414/Simulation/simulation.html#fn1>
 
 <https://github.com/kickyourasss/AdvancedAlgorithms>
+https://www.math.arizona.edu/~jwatkins/J2_limit.pdf
